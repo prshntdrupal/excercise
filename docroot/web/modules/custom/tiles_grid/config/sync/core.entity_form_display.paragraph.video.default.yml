@@ -1,0 +1,45 @@
+uuid: f61b112a-8774-4a27-a1d0-ba407ea1f18b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_preview_image
+    - field.field.paragraph.video.field_short_description
+    - field.field.paragraph.video.field_video_url
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.video
+  module:
+    - image
+    - text
+    - youtube
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_preview_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_short_description:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_video_url:
+    weight: 0
+    settings:
+      placeholder_url: ''
+    third_party_settings: {  }
+    type: youtube
+    region: content
+hidden:
+  created: true
+  status: true

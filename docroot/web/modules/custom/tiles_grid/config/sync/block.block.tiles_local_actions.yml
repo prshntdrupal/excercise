@@ -1,0 +1,20 @@
+uuid: e717acba-e1bf-4e45-a0d3-1e1ffeb380b9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tiles
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: tiles_local_actions
+theme: tiles
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

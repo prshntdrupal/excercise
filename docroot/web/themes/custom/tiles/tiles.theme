@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function tiles_theme_suggestions_item_list_alter(array &$suggestions, array $variables) {
+
+  // Use \Drupal::routeMatch() to get the current view ID or some other indicator.
+  // Sample: Get the current view ID.
+  $view_id = \Drupal::routeMatch()->getRouteObject()->getDefault('view_id');
+
+  // Install Devel, Kint module, then uncomment the following line and flush caches to inspect the outcome.
+  // ksm($view_id);
+
+  // Add the template suggestion.
+  // Add your template now under /templates/item-list--VIEWID.html.twig
+  if ($view_id == 'front_page') {
+    $suggestions[] = 'item_list__' . $view_id;
+  }
+}
+
+

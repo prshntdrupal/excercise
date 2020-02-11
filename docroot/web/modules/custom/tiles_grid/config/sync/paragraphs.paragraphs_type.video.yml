@@ -1,0 +1,9 @@
+uuid: bf40682e-776c-4af9-b1a9-dd24a6268d14
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: Video
+icon_uuid: null
+description: 'Add video tile from youtube'
+behavior_plugins: {  }

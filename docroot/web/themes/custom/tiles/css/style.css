@@ -1,0 +1,111 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+/* css for including font */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?cqmf9m');
+  src:  url('../fonts/icomoon.eot?cqmf9m#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?cqmf9m') format('truetype'),
+  url('../fonts/icomoon.woff?cqmf9m') format('woff'),
+  url('../fonts/icomoon.svg?cqmf9m#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* css for including font ends */
+
+/* css for icons */
+.icon-tile-2:before {
+  content: "\e9a3";
+}
+li.icon-tile.Food{
+}
+.icon-tile-3:before {
+  content: "\e9c9";
+}
+.icon-tile-1:before {
+  content: "\e9e1";
+}
+.icon {
+  font-size: 2em;
+  color:#fff;
+
+}
+.icon-play2:before {
+  content: "\ea15";
+  font-size: 2em;
+  color:#fff;
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  cursor: pointer;
+}
+/* css for icons ends */
+
+/* css for isotope */
+.isotope-filter li {
+  display: inline-block;
+}
+.isotope-filter a, .isotope-filter a:hover { text-decoration: none;}
+.isotope-tiles ul ul li, .isotope-tiles li {
+  display: block;
+  margin: 5px;
+}
+.isotope-tiles ul ul {
+  position: absolute;
+  right: 10%;
+  top:10%
+}
+
+li.iso-item {
+  width: 25em;
+  margin: 5px;
+  padding: 1em;
+  background: white;
+  color: #262524;
+  border: 1px #eee8d5 solid;
+}
+/* css for isotope ends */
+
+/* css for tile text */
+.tile-inner-content {
+  padding: 10px;
+}
+
+.tile-inner-content {
+  padding: 10px;
+  text-decoration: none;
+  color: #777;
+}
+.iso-item a {
+  text-decoration: none;
+}
+
+.tile-title {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.tile-desc {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+/* css for tile text ends */

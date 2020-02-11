@@ -1,0 +1,39 @@
+version: '3'
+services:
+  app:
+    build:
+      context: ../docker/app
+      dockerfile: Dockerfile
+    image: ubuntuphp7:latest
+    networks:
+      - appnet
+    volumes:
+      - .:/var/www/html/public
+    ports:
+      - 8989:80
+    working_dir: /var/www/html/public
+  db:
+    image: mysql:5.6
+    environment:
+      MYSQL_ROOT_PASSWORD: tile
+      MYSQL_DATABASE: tile
+      MYSQL_USER: tile
+      MYSQL_PASSWORD: tile
+    networks:
+     - appnet
+    volumes:
+      - dbdata:/var/lib/mysql
+    ports:
+      - 3307:3306
+    command: --max_allowed_packet=64M
+    #command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_general_ci', '--innodb_large_prefix=true', '--innodb_file_format=barracuda', '--innodb_file_per_table=true']
+networks:
+  appnet:
+    driver: bridge
+volumes:
+  dbdata:
+    driver: local
+  cacheddata:
+    driver: local
+  solrdata:
+    driver: local

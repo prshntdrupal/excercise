@@ -1,0 +1,55 @@
+uuid: 1ac18131-9748-4555-baab-569336886054
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.information.field_image
+    - field.field.paragraph.information.field_link
+    - field.field.paragraph.information.field_preview_image
+    - field.field.paragraph.information.field_short_description
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.information
+  module:
+    - image
+    - link
+    - text
+id: paragraph.information.default
+targetEntityType: paragraph
+bundle: information
+mode: default
+content:
+  field_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_preview_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_short_description:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true

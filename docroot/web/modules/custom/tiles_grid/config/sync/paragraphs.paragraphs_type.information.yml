@@ -1,0 +1,9 @@
+uuid: d3dfd182-ce10-4d8b-acc1-9f8e93aabe77
+langcode: en
+status: true
+dependencies: {  }
+id: information
+label: Information
+icon_uuid: null
+description: 'Add informative tile'
+behavior_plugins: {  }

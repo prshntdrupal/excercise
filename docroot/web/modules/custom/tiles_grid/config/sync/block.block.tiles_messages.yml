@@ -1,0 +1,22 @@
+uuid: 76294f7b-8031-4ae2-9a01-d3cdae50a5d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tiles
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: tiles_messages
+theme: tiles
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

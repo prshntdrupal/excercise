@@ -1,0 +1,24 @@
+uuid: 6c6f1ebc-074c-4bd1-be2f-9c4d4ab4d6a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tile.field_add_data
+    - field.field.node.tile.field_tags
+    - node.type.tile
+  module:
+    - user
+id: node.tile.teaser
+targetEntityType: node
+bundle: tile
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_add_data: true
+  field_tags: true

@@ -1,0 +1,9 @@
+uuid: 2bc01eb0-1e32-43fa-a1f7-eaccb72b7ff1
+langcode: en
+status: true
+dependencies: {  }
+id: article
+label: Article
+icon_uuid: null
+description: 'Add Article tile from article content'
+behavior_plugins: {  }

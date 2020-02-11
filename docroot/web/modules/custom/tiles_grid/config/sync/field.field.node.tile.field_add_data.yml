@@ -1,0 +1,35 @@
+uuid: 3adb2f2b-5b6d-4c40-8dbc-8968314613ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_data
+    - node.type.tile
+  module:
+    - entity_reference_revisions
+id: node.tile.field_add_data
+field_name: field_add_data
+entity_type: node
+bundle: tile
+label: 'Add tile data'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      article:
+        weight: 4
+        enabled: false
+      information:
+        weight: 5
+        enabled: false
+      video:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

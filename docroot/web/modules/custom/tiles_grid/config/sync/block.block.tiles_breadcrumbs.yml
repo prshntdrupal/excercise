@@ -1,0 +1,22 @@
+uuid: 5797bea8-fbca-4271-bd5a-8cf3d1ec95ef
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - tiles
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: tiles_breadcrumbs
+theme: tiles
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

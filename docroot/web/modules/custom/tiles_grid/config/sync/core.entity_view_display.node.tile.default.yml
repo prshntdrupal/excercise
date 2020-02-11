@@ -1,0 +1,39 @@
+uuid: e4db68f0-2bd4-4789-8c00-2d05202405ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tile.field_add_data
+    - field.field.node.tile.field_tags
+    - node.type.tile
+  module:
+    - entity_reference_revisions
+    - user
+id: node.tile.default
+targetEntityType: node
+bundle: tile
+mode: default
+content:
+  field_add_data:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
